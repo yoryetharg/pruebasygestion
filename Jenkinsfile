@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('MAVEN-PROYECTO') {
+    stage('MAVEN') {
       steps {
-        build 'MAVEN-PROYECTO'
+        build(job: 'MAVEN-PROYECTO', propagate: true)
       }
     }
 
