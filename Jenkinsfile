@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        build(job: 'TOMCAT-QA', wait: true)
+      }
+    }
+
   }
 }
