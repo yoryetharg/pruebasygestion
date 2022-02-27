@@ -1,9 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('QA') {
+    stage('PRODUCCIÓN') {
       steps {
-        build(job: 'JOB2- MAVEN', propagate: true)
+        build(job: 'MAVEN-PROYECTO', propagate: true)
+      }
+    }
+
+    stage('TOMCAT ') {
+      steps {
+        build(job: 'TOMCAT-MAVEN-MAIN', wait: true)
       }
     }
 
