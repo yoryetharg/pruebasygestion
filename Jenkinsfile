@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('MAVEN-PROYECTO') {
       steps {
         build 'MAVEN-PROYECTO'
       }
