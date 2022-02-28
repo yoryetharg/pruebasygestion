@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('TOMCAT-QA') {
       steps {
         build(job: 'TOMCAT-QA', wait: true)
       }
